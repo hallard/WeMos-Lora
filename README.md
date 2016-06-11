@@ -12,7 +12,7 @@ This shield is used to hold HopeRF [Lora module][4] Software with WeMos ESP8266 
 You can find more information on WeMos on their [site][1], it's really well documented.
 I now use WeMos boards instead of NodeMCU's one because they're just smaller, features remains the same, but I also suspect WeMos regulator far better quality than the one used on NodeMCU that are just fake of originals AMS117 3V3.
 
-**Boards arrived from OSHPark, I did not fully tested them yet, I will update ASAP. Use at your own risks**
+Boards arrived from OSHPark, I tested them, works fine with forked version of [single Channel LoRaWAN Gateway][5] but you can use any program that is compatible with RFM95 Lora module according it to real pinout.
 
 Detailed Description
 ====================
@@ -30,7 +30,8 @@ You can order the PCB of this board at [OSHPARK][3]
 
 ### Assembled boards
 
-I currently have the boards from OSHPARK but dit not tested them yet
+<img src="https://raw.githubusercontent.com/hallard/WeMos-Lora/master/WeMos-Lora-top-assembled.jpg" alt="Top">    
+<img src="https://raw.githubusercontent.com/hallard/WeMos-Lora/master/WeMos-Lora-bot-assembled.jpg" alt="Bottom">    
 
 ##License
 
@@ -43,3 +44,4 @@ See news and other projects on my [blog][2]
 [2]: https://hallard.me
 [3]: https://oshpark.com/shared_projects/FD4f9q2s
 [4]: http://www.hoperf.com/rf_transceiver/lora/
+[5]: https://github.com/hallard/ESP-1ch-Gateway/
