@@ -43,9 +43,6 @@ Other pins that may need be adapted into code (for example if you use TTN networ
 ### Schematic  
 ![schematic](https://raw.githubusercontent.com/hallard/WeMos-Lora/master/pictures/WeMos-Lora-sch.png)  
 
-### Firmware  
-![firmware](https://raw.githubusercontent.com/hallard/WeMos-Lora/firmware/)  
-
 ### Boards  
 <img src="https://raw.githubusercontent.com/hallard/WeMos-Lora/master/pictures/WeMos-Lora-top.png" alt="Top">&nbsp;
 <img src="https://raw.githubusercontent.com/hallard/WeMos-Lora/master/pictures/WeMos-Lora-bot.png" alt="Bottom">
