@@ -47,7 +47,7 @@ Other pins that may need be adapted into code (for example if you use TTN networ
 <img src="https://raw.githubusercontent.com/hallard/WeMos-Lora/master/pictures/WeMos-Lora-top.png" alt="Top">&nbsp;
 <img src="https://raw.githubusercontent.com/hallard/WeMos-Lora/master/pictures/WeMos-Lora-bot.png" alt="Bottom">
 
-You can order the PCB of this board at [PCBs.io][3]
+You can order the PCB of this board at [PCBs.io][3] if you do so, PCBs.io give me little discount that allow me to buy some new created boards.
 
 ### Assembled boards
 
