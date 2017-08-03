@@ -59,15 +59,22 @@ You can see more details ont this dedicated LMIC [Pull Request][6]
 
 You can order the PCB of this board at [PCBs.io][3] if you do so, PCBs.io give me discount that allow me to buy some new created boards.
 
-### Assembled boards
+Assembled boards (V1.0)
+=======================
 
 <img src="https://raw.githubusercontent.com/hallard/WeMos-Lora/master/pictures/WeMos-Lora-top-assembled.jpg" alt="Top">    
 <img src="https://raw.githubusercontent.com/hallard/WeMos-Lora/master/pictures/WeMos-Lora-bot-assembled.jpg" alt="Bottom">    
-##License
 
-You can do whatever you like with this design.
+License
+=======
 
-##Misc
+<img alt="Creative Commons Attribution-NonCommercial 4.0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png">   
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/)    
+If you want to do commercial stuff with this project, please contact [CH2i company](https://ch2i.eu/en#support) so we can organize an simple agreement.
+
+Misc
+====
 See news and other projects on my [blog][2] 
  
 [1]: http://www.wemos.cc/wiki/doku.php?id=en:d1_mini
