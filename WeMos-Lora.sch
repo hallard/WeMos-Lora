@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -952,6 +952,46 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <smd name="GND5" x="-2.3495" y="2.54" dx="4.318" dy="1.524" layer="16" rot="R180" cream="no"/>
 <smd name="GND6" x="-2.3495" y="-2.54" dx="4.318" dy="1.524" layer="16" rot="R180" cream="no"/>
 </package>
+<package name="PAD-JUMPER-3-2OF3_NC_BY_TRACE_YES_SILK_FULL_BOX">
+<wire x1="1.27" y1="-1.016" x2="-1.27" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="1.016" x2="1.524" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.524" y1="0.762" x2="-1.27" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.524" y1="-0.762" x2="-1.27" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.27" y1="-1.016" x2="1.524" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.524" y1="-0.762" x2="1.524" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="-0.762" x2="-1.524" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="1.016" x2="1.27" y2="1.016" width="0.1524" layer="21"/>
+<smd name="1" x="-0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="3" x="0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<text x="-1.27" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-1.905" size="0.4064" layer="27">&gt;VALUE</text>
+<wire x1="0" y1="0" x2="0.635" y2="0" width="0.2032" layer="1"/>
+</package>
+<package name="PAD-JUMPER-3-2OF3_NC_BY_TRACE_YES_SILK_LARGE">
+<wire x1="2.159" y1="-1.016" x2="-2.159" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="2.159" y1="1.016" x2="2.413" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.413" y1="0.762" x2="-2.159" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.413" y1="-0.762" x2="-2.159" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.159" y1="-1.016" x2="2.413" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.413" y1="-0.762" x2="2.413" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-2.413" y1="-0.762" x2="-2.413" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-2.159" y1="1.016" x2="2.159" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="0" x2="2.286" y2="0" width="0.1524" layer="51"/>
+<wire x1="-1.778" y1="0" x2="-2.286" y2="0" width="0.1524" layer="51"/>
+<wire x1="0" y1="0.762" x2="0" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="1.016" y1="0.127" x2="1.016" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<wire x1="-1.016" y1="-0.127" x2="-1.016" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<smd name="1" x="-1.524" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<smd name="2" x="0" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<smd name="3" x="1.524" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<text x="-2.413" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.508" y1="-0.762" x2="0.508" y2="0.762" layer="51"/>
+<wire x1="0" y1="0" x2="1.27" y2="0" width="0.4064" layer="1"/>
+<wire x1="0" y1="0" x2="1.27" y2="0" width="0.4064" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="M04">
@@ -1059,6 +1099,23 @@ OUT</text>
 <pin name="DIO5" x="12.7" y="-7.62" visible="pin" length="short" direction="oc" rot="R180"/>
 <pin name="RST" x="-12.7" y="-5.08" visible="pin" length="short" direction="oc"/>
 <pin name="DIO1" x="-12.7" y="-10.16" visible="pin" length="short" direction="oc"/>
+</symbol>
+<symbol name="PAD-JUMPER-3-2OF3-NC_BY_TRACE">
+<wire x1="-0.635" y1="-1.397" x2="0.635" y2="-1.397" width="1.27" layer="94" curve="180" cap="flat"/>
+<wire x1="-0.635" y1="1.397" x2="0.635" y2="1.397" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="1.27" y1="-0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-0.635" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0.635" x2="1.27" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<text x="2.54" y="0.381" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-1.905" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-1.27" y1="-0.635" x2="1.27" y2="0.635" layer="94"/>
+<pin name="3" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1631,6 +1688,33 @@ End launch SMA connector. The paste layer has been removed so that the connector
 <connect gate="G$1" pin="SCK" pad="SCK"/>
 <connect gate="G$1" pin="SEL" pad="NSS"/>
 <connect gate="G$1" pin="VCC" pad="VDD"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JUMPER-PAD-3-2OF3_NC_BY_TRACE" prefix="JP">
+<gates>
+<gate name="G$1" symbol="PAD-JUMPER-3-2OF3-NC_BY_TRACE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_SMALL" package="PAD-JUMPER-3-2OF3_NC_BY_TRACE_YES_SILK_FULL_BOX">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_LARGE" package="PAD-JUMPER-3-2OF3_NC_BY_TRACE_YES_SILK_LARGE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2989,7 +3073,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="I2C_OLED" library="_c2h" deviceset="CON_HEADER_1X04" device="'LOCK'" value="CON_HEADER_1X04'LOCK'"/>
 <part name="NAME" library="SparkFun-Aesthetics" deviceset="FRAME-A4L" device="" value="Value">
 <attribute name="CNAME" value="ESP8266 WeMos Lora Shield"/>
-<attribute name="CREVISION" value="1.1"/>
+<attribute name="CREVISION" value="1.2"/>
 <attribute name="DESIGNER" value="Charles-Henri Hallard"/>
 </part>
 <part name="P+7" library="_c2h" deviceset="3V3-EXT" device="" value="3V3"/>
@@ -3030,6 +3114,9 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="J$2" library="_c2h" deviceset="ANTENNA" device="TINY"/>
 <part name="C5" library="_c2h" deviceset="CAP" device="0805-CAP" value="100nF"/>
 <part name="GND7" library="SparkFun" deviceset="GND" device=""/>
+<part name="JP3" library="_c2h" deviceset="JUMPER-PAD-3-2OF3_NC_BY_TRACE" device="_SMALL" value="DS"/>
+<part name="R3" library="_c2h" deviceset="RESISTOR" device="0805-RES" value="100K"/>
+<part name="GND11" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3045,18 +3132,17 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <text x="134.62" y="133.35" size="1.778" layer="94">SCK</text>
 <text x="134.62" y="125.73" size="1.778" layer="94">IRQ</text>
 <text x="153.67" y="146.05" size="2.54" layer="94">WeMos  Headers</text>
-<text x="99.06" y="123.19" size="1.778" layer="94">433MHz</text>
+<text x="99.06" y="123.19" size="1.778" layer="94">868MHz</text>
 <text x="191.77" y="128.27" size="1.778" layer="94">Switch</text>
 <text x="46.99" y="124.46" size="1.778" layer="94">SS</text>
 <text x="44.45" y="116.84" size="1.778" layer="94">MOSI</text>
 <text x="44.45" y="119.38" size="1.778" layer="94">MISO</text>
 <text x="45.72" y="121.92" size="1.778" layer="94">SCK</text>
-<text x="119.38" y="92.71" size="1.778" layer="94">WeMos already has
-a pullup on GPIO2</text>
-<text x="134.62" y="135.89" size="1.778" layer="94">SS</text>
-<text x="111.76" y="45.72" size="1.778" layer="94">WeMos already
-has a pulldown
-on GPIO15</text>
+<text x="117.475" y="89.535" size="1.778" layer="94">WeMos  has a 12K
+pullup on GPIO2</text>
+<text x="109.855" y="49.53" size="1.778" layer="94">WeMos has a 12K
+pulldown on GPIO15</text>
+<text x="118.745" y="129.54" size="1.778" layer="94">SS</text>
 </plain>
 <instances>
 <instance part="R1" gate="G$1" x="41.91" y="82.55" smashed="yes" rot="R90">
@@ -3160,6 +3246,12 @@ on GPIO15</text>
 <instance part="GND7" gate="1" x="74.93" y="52.07" smashed="yes" rot="R90">
 <attribute name="VALUE" x="77.47" y="49.53" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="JP3" gate="G$1" x="128.27" y="135.89" rot="MR0"/>
+<instance part="R3" gate="G$1" x="123.825" y="123.19" smashed="yes" rot="R90">
+<attribute name="NAME" x="122.3264" y="121.92" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="127.127" y="120.65" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND11" gate="1" x="123.825" y="114.935"/>
 </instances>
 <busses>
 </busses>
@@ -3243,6 +3335,11 @@ on GPIO15</text>
 <pinref part="C5" gate="G$1" pin="2"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="71.12" y1="52.07" x2="72.39" y2="52.07" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="123.825" y1="118.11" x2="123.825" y2="117.475" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -3421,18 +3518,19 @@ on GPIO15</text>
 <wire x1="63.5" y1="114.3" x2="50.8" y2="114.3" width="0.1524" layer="91"/>
 <label x="52.07" y="114.3" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="JP3" gate="G$1" pin="1"/>
+<wire x1="128.27" y1="140.97" x2="128.27" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="128.27" y1="142.24" x2="118.11" y2="142.24" width="0.1524" layer="91"/>
+<label x="118.11" y="142.24" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="GPIO16" class="0">
 <segment>
 <pinref part="JP2" gate="G$1" pin="3"/>
-<wire x1="148.59" y1="135.89" x2="140.97" y2="135.89" width="0.1524" layer="91"/>
 <label x="140.97" y="135.89" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="63.5" y1="124.46" x2="50.8" y2="124.46" width="0.1524" layer="91"/>
-<label x="52.07" y="124.46" size="1.778" layer="95"/>
-<pinref part="U$5" gate="G$1" pin="SEL"/>
-<junction x="63.5" y="124.46"/>
+<pinref part="JP3" gate="G$1" pin="2"/>
+<wire x1="148.59" y1="135.89" x2="133.35" y2="135.89" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO1" class="0">
@@ -3575,6 +3673,24 @@ on GPIO15</text>
 <label x="90.17" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="SEL" class="0">
+<segment>
+<pinref part="JP3" gate="G$1" pin="3"/>
+<wire x1="128.27" y1="130.81" x2="128.27" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="128.27" y1="129.54" x2="123.825" y2="129.54" width="0.1524" layer="91"/>
+<label x="118.11" y="129.54" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="123.825" y1="129.54" x2="118.11" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="123.825" y1="128.27" x2="123.825" y2="129.54" width="0.1524" layer="91"/>
+<junction x="123.825" y="129.54"/>
+</segment>
+<segment>
+<wire x1="63.5" y1="124.46" x2="50.8" y2="124.46" width="0.1524" layer="91"/>
+<label x="52.07" y="124.46" size="1.778" layer="95"/>
+<pinref part="U$5" gate="G$1" pin="SEL"/>
+<junction x="63.5" y="124.46"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -3584,13 +3700,15 @@ on GPIO15</text>
 <approved hash="102,1,177.8,106.68,+5V,5V,,,,"/>
 <approved hash="102,1,76.2,153.67,+3V3,3V3,,,,"/>
 <approved hash="102,1,199.39,106.68,+5V,5V,,,,"/>
+<approved hash="102,1,60.96,54.61,3V3-EXT,3V3,,,,"/>
 <approved hash="104,1,177.8,91.44,WS2812,VDD,VLED,,,"/>
 <approved hash="104,1,76.2,132.08,U$5,VCC,3V3,,,"/>
 <approved hash="104,1,199.39,91.44,WS1,VDD,5V,,,"/>
+<approved hash="104,1,60.96,50.8,U1,VCC,3V3,,,"/>
+<approved hash="104,1,60.96,30.48,U1,VSS,GND,,,"/>
 <approved hash="106,1,148.59,138.43,A0,,,,,"/>
 <approved hash="106,1,184.15,140.97,GPIO1,,,,,"/>
 <approved hash="106,1,184.15,138.43,GPIO3,,,,,"/>
-<approved hash="106,1,148.59,140.97,RST,,,,,"/>
 <approved hash="113,1,151.807,130.615,JP2,,,,,"/>
 <approved hash="113,1,180.933,130.615,JP1,,,,,"/>
 </errors>

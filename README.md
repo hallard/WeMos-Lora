@@ -9,19 +9,22 @@ This shield is used to hold HopeRF [Lora module][4] Software with WeMos ESP8266 
 - 2 x WS2812B Type LED for visual indication
 - Custom switch on GPIO2
 - Added footprint for Microchip 24AA02E64 64 bits serial number (v1.1+) 
+- Added Solder PAD jumper to be able to connect GPIO16 to Reset to enable deep sleep (V1.2+)
 
 
 You can find more information on WeMos on their [site][1], it's really well documented.
 I now use WeMos boards instead of NodeMCU's one because they're just smaller, features remains the same, but I also suspect WeMos regulator far better quality than the one used on NodeMCU that are just fake of originals AMS117 3V3.
 
-Boards arrived from OSHPark, I tested them, works fine with forked version of [single Channel LoRaWAN Gateway][5] but you can use any program that is compatible with RFM95 Lora module according it to real pinout.
+Boards arrived, I tested them, works fine with forked version of [single Channel LoRaWAN Gateway][5] but you can use any program that is compatible with RFM95 Lora module according it to real pinout.
 
 Detailed Description
 ====================
 
 Look at the schematics for more informations.
 
-SPI connexion is classic (MOSI/MISO/CLK), Chip Select is connected with GPIO16.
+SPI connexion is classic (MOSI/MISO/CLK), 
+
+Since V1.2, chip Select is still connected with GPIO16 by default but solder pad on bottom of the board allow you to connect GPIO16 to RESET for Deep Sleep. In this case, please add and solder R3 Pulldown (100K) to make RFM95 SPI device always selected.
 
 Other pins that may need be adapted into code (for example if you use TTN network gateway code) according to the following pinout
 
@@ -34,13 +37,14 @@ You can see more details ont this dedicated LMIC [Pull Request][6]
   GPIO13 (D7) <----> MOSI
   GPIO14 (D5) <----> CLK
   GPIO15 (D8) <----> DIO0/D2 OR DIO1/D3 OR DIO2/D4
-  GPIO16 (D0) <----> SEL (Chip Select)
+  GPIO16 (D0) <----> SEL Chip Select (depending on bottom solder PAD position)
 
    WeMos D1         Shield Feature
-  GPIO5 (D1) <----> I2C SCL
-  GPIO4 (D2) <----> I2C SDA
-  GPIO0 (D3) <----> WS2812 LEDS
-  GPIO2 (D4) <----> Push Button
+  GPIO5  (D1) <----> I2C SCL
+  GPIO4  (D2) <----> I2C SDA
+  GPIO0  (D3) <----> WS2812 LEDS
+  GPIO2  (D4) <----> Push Button
+  GPIO16 (D0) <----> RESET (depending on bottom solder PAD position)
 ```
 
 ### Schematic  
@@ -53,7 +57,7 @@ You can see more details ont this dedicated LMIC [Pull Request][6]
 <img src="https://raw.githubusercontent.com/hallard/WeMos-Lora/master/pictures/WeMos-Lora-top.png" alt="Top">&nbsp;
 <img src="https://raw.githubusercontent.com/hallard/WeMos-Lora/master/pictures/WeMos-Lora-bot.png" alt="Bottom">
 
-You can order the PCB of this board at [PCBs.io][3] if you do so, PCBs.io give me little discount that allow me to buy some new created boards.
+You can order the PCB of this board at [PCBs.io][3] if you do so, PCBs.io give me discount that allow me to buy some new created boards.
 
 ### Assembled boards
 
