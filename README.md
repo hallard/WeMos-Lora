@@ -24,7 +24,12 @@ Look at the schematics for more informations.
 
 SPI connexion is classic (MOSI/MISO/CLK), 
 
-Since V1.2, chip Select is still connected with GPIO16 by default but solder pad on bottom of the board allow you to connect GPIO16 to RESET for Deep Sleep. In this case, please add and solder R3 Pulldown (100K) to make RFM95 SPI device always selected.
+Since V1.2, chip Select is still connected with GPIO16 by default but solder pad on bottom of the board allow you to connect GPIO16 to RESET for Deep Sleep. In this case: 
+
+- add and solder R3 Pulldown (100K) to make RFM95 SPI device always selected
+- on bottom solder pad cut trace between GPIO19 and SEL 
+- on bottom solder join GPIO16 and RST with solder
+
 
 Other pins that may need be adapted into code (for example if you use TTN network gateway code) according to the following pinout
 
@@ -47,13 +52,16 @@ You can see more details ont this dedicated LMIC [Pull Request][6]
   GPIO16 (D0) <----> RESET (depending on bottom solder PAD position)
 ```
 
-### Schematic  
+Schematic  
+=========
 ![schematic](https://raw.githubusercontent.com/hallard/WeMos-Lora/master/pictures/WeMos-Lora-sch.png)  
 
-### Firmware  
-![firmware](https://raw.githubusercontent.com/hallard/WeMos-Lora/firmware/)  
+Firmware  
+========
+[firmware](https://github.com/hallard/WeMos-Lora/tree/master/firmware)  
 
-### Boards  
+Boards  
+======
 <img src="https://raw.githubusercontent.com/hallard/WeMos-Lora/master/pictures/WeMos-Lora-top.png" alt="Top">&nbsp;
 <img src="https://raw.githubusercontent.com/hallard/WeMos-Lora/master/pictures/WeMos-Lora-bot.png" alt="Bottom">
 
