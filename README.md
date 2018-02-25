@@ -12,7 +12,7 @@ This shield is used to hold HopeRF [Lora module][4] Software with WeMos ESP8266 
 - Added Solder PAD jumper to be able to connect GPIO16 to Reset to enable deep sleep (V1.2+)
 
 
-You can find more information on WeMos on their [site][1], it's really well documented.
+You can find more information on WeMos D1 mini boards ([mini][1], [mini pro][7], [mini lite[8]), it's really well documented.
 I now use WeMos boards instead of NodeMCU's one because they're just smaller, features remains the same, but I also suspect WeMos regulator far better quality than the one used on NodeMCU that are just fake of originals AMS117 3V3.
 
 Boards arrived, I tested them, works fine with forked version of [single Channel LoRaWAN Gateway][5] but you can use any program that is compatible with RFM95 Lora module according it to real pinout.
@@ -23,6 +23,8 @@ Detailed Description
 Look at the schematics for more informations.
 
 SPI connexion is classic (MOSI/MISO/CLK), 
+
+**New v1.3** Solder pad on bottom layer to be able to switch 3V3 and GND Pin. It's configured as old version mapping by default (silkscreen is correct). 
 
 Since V1.2, chip Select is still connected with GPIO16 by default but solder pad on bottom of the board allow you to connect GPIO16 to RESET for Deep Sleep. In this case: 
 
@@ -85,9 +87,11 @@ Misc
 ====
 See news and other projects on my [blog][2] 
  
-[1]: http://www.wemos.cc/wiki/doku.php?id=en:d1_mini
+[1]: https://wiki.wemos.cc/products:d1:d1_mini
 [2]: https://hallard.me
 [3]: https://PCBs.io/share/4Q1Z4 
 [4]: http://www.hoperf.com/rf_transceiver/lora/
 [5]: https://github.com/hallard/ESP-1ch-Gateway/
 [6]: https://github.com/matthijskooijman/arduino-lmic/pull/34
+[7]: https://wiki.wemos.cc/products:d1:d1_mini_pro
+[8]: https://wiki.wemos.cc/products:d1:d1_mini_lite
