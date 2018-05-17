@@ -1,7 +1,9 @@
-WeMos Lora Firmware
-===================
 
-To Be Done
+Lora Firmware for ESP8266 or ESP32 with RFM95
+=============================================
+
+You can use this [firmware fork](https://github.com/SensorsIot/ESP-1ch-Gateway) for example as Single Chanel Gateway
+
 
 Dependencies
 ------------
