@@ -1,5 +1,5 @@
-ESP8266 WeMos Shield for HopeRF RFM95 RFM96 RFM98 Lora Modules
-==============================================================
+# ESP8266 WeMos Shield for HopeRF RFM95 RFM96 RFM98 Lora Modules
+
 
 This shield is used to hold HopeRF [Lora module][4] Software with WeMos ESP8266 boards it has just few minimal features. 
 - I2C Pullups placement
@@ -17,8 +17,7 @@ I now use WeMos boards instead of NodeMCU's one because they're just smaller, fe
 
 Boards arrived, I tested them, works fine with forked version of [single Channel LoRaWAN Gateway][5] but you can use any program that is compatible with RFM95 Lora module according it to real pinout.
 
-Detailed Description
-====================
+## Detailed Description
 
 Look at the schematics for more informations.
 
@@ -54,37 +53,44 @@ You can see more details ont this dedicated LMIC [Pull Request][6]
   GPIO16 (D0) <----> RESET (depending on bottom solder PAD position)
 ```
 
-Schematic  
-=========
+## Schematic  
+
 ![schematic](https://raw.githubusercontent.com/hallard/WeMos-Lora/master/pictures/WeMos-Lora-sch.png)  
 
-Firmware  
-========
+## Bill Of Material
+
+Nothing fancy, all components are 0805 and/or PTH and can be ordered almost anywhere (digikey, mouser, radiospare, ...). 
+use only what you need dependings on what you want to do. You can find lot of components on ebay or aliexpress, but since vendors are often ephemere, I put for reference the BOM on well known providers.
+
+Here is the [octopart BOM](https://octopart.com/bom-tool/SJPhS5Am)
+
+## Firmware  
+
 [firmware](https://github.com/hallard/WeMos-Lora/tree/master/firmware)  
 
-Boards  
-======
+## Boards  
+
 <img src="https://raw.githubusercontent.com/hallard/WeMos-Lora/master/pictures/WeMos-Lora-top.png" alt="Top">&nbsp;
 <img src="https://raw.githubusercontent.com/hallard/WeMos-Lora/master/pictures/WeMos-Lora-bot.png" alt="Bottom">
 
 You can order the PCB of this board at [PCBs.io][3] if you do so, PCBs.io give me discount that allow me to buy some new created boards.
 
-Assembled boards (V1.0)
-=======================
+## Assembled boards (V1.0)
 
 <img src="https://raw.githubusercontent.com/hallard/WeMos-Lora/master/pictures/WeMos-Lora-top-assembled.jpg" alt="Top">    
 <img src="https://raw.githubusercontent.com/hallard/WeMos-Lora/master/pictures/WeMos-Lora-bot-assembled.jpg" alt="Bottom">    
 
-License
-=======
+## License
+
+## License
 
 <img alt="Creative Commons Attribution-NonCommercial 4.0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png">   
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/)    
-If you want to do commercial stuff with this project, please contact [CH2i company](https://ch2i.eu/en#support) so we can organize an simple agreement.
+If you want to do commercial stuff with this project, please contact [CH2i company](https://www.ch2i.eu/en#support) so we can organize an simple agreement.
 
-Misc
-====
+# Misc
+
 See news and other projects on my [blog][2] 
  
 [1]: https://wiki.wemos.cc/products:d1:d1_mini
