@@ -73,9 +73,9 @@ Here is the [octopart BOM](https://octopart.com/bom-tool/SJPhS5Am)
 <img src="https://raw.githubusercontent.com/hallard/WeMos-Lora/master/pictures/WeMos-Lora-top.png" alt="Top">&nbsp;
 <img src="https://raw.githubusercontent.com/hallard/WeMos-Lora/master/pictures/WeMos-Lora-bot.png" alt="Bottom">
 
-You can order the PCB of this board at [PCBs.io][3] if you do so, PCBs.io give me discount that allow me to buy some new created boards.ıı
+~~You can order the PCB of this board at [PCBs.io][3] if you do so, PCBs.io give me discount that allow me to buy some new created boards.~~
    
-~~Looks like PCBs.io is gone, I do not have any rewards from PCBs.io since August 2020 and my free order placed after are still not received, so my guess they are not on business anymore.~~
+Looks like PCBs.io is gone, I do not have any rewards from PCBs.io since August 2020 and my free order placed after are still not received, so my guess they are not on business anymore.
 
 So you can order the board on [oshpark](https://oshpark.com/shared_projects/E9P1U0Ae). It's a pitty after several discuss with OSHPark that I can't have any rewards for each people ordering my boards, this would allow me to order free PCB for shared projects and create new ones. For information my shared boards generated a total of **$285 162.00** orders at PCBs.io in 4 years, not bad at all :-)
 
@@ -86,8 +86,6 @@ Hoping one day OSHparks will thanks me giving them this market.
 
 <img src="https://raw.githubusercontent.com/hallard/WeMos-Lora/master/pictures/WeMos-Lora-top-assembled.jpg" alt="Top">    
 <img src="https://raw.githubusercontent.com/hallard/WeMos-Lora/master/pictures/WeMos-Lora-bot-assembled.jpg" alt="Bottom">    
-
-## License
 
 ## License
 
